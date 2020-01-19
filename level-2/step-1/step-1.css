@@ -3,6 +3,7 @@
     height: 375px;
     background: #F7F1E7;
     position: relative;
+    display: inline-block;
 }
 
 .top-header {
@@ -18,7 +19,9 @@
     width: 100px;
     height: 40px;
     background: #536A63;
-    float: left;
+    float: left; /*float this block left and give it a width*/
+    position: relative;/*relative to other elements in the flow of the page*/
+    /*on the contrary of absolute which takes the elements out of the normal flow and put it out anywhere on the screen */
 }
 
 .logo {
@@ -27,12 +30,14 @@
     margin-top: 10px;
     background: #536A63;
     display: inline-block;
-
+    /*inline block respects margin,heigh,width properties , not like inline display*/
+    /* inline-block does not add line after the elements , on the contrary of block property which adds line after elements*/
+    
 }
 
 .sign-in {
     width: 100px;
     height: 40px;
     background: #536A63;
-    float: right;
+    float: right;/*float right , and give it a width*/
 }
